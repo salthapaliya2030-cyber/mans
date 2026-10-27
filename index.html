@@ -14,7 +14,7 @@
 .pvz-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}
 .pvz-heading h2{font-size:1.25rem;letter-spacing:-.03em;margin:0}
 .pvz-heading p{color:var(--muted);font-size:.9rem;margin:5px 0 0}
-.pvz-pill{border:1px solid #7cf0bb55;color:var(--green);background:#7cf0bb12;border-radius:999px;padding:7px 11px;font-size:.75rem;font-weight:800;white-space:nowrap}
+.pvz-pill{border:1px solid #7cf0bb55;color:var(--green);background:#7cf0bb12;border-radius:999px;padding:7px 11px;font-size:.75rem;font-weight:800;white-space:nowrap}.pvz-heading-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.pvz-open{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #9c83ff70;border-radius:999px;padding:9px 13px;background:#9c83ff18;color:var(--ink);text-decoration:none;font-size:.8rem;font-weight:800;white-space:nowrap}.pvz-open:hover{background:#9c83ff30}.pvz-fallback{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:12px;color:var(--muted);font-size:.84rem}
 .pvz-frame{width:100%;aspect-ratio:16/9;min-height:300px;max-height:720px;border:1px solid #ffffff1c;border-radius:15px;overflow:hidden;background:#080a10}
 .pvz-frame iframe{display:block;width:100%;height:100%;min-height:300px;border:0}
 @media(max-width:600px){.pvz-featured{padding:12px;margin-bottom:25px}.pvz-frame{min-height:240px;aspect-ratio:4/3}.pvz-frame iframe{min-height:240px}}
@@ -30,11 +30,15 @@
 <section class="pvz-featured" id="pvz-featured" aria-labelledby="pvz-title">
   <div class="pvz-heading">
     <div><h2 id="pvz-title">🌻 Plants vs. Zombies Hybrids</h2><p>Grow your defenses and stop the zombie waves.</p></div>
-    <span class="pvz-pill">FEATURED GAME</span>
+    <div class="pvz-heading-actions">
+      <span class="pvz-pill">FEATURED GAME</span>
+      <a class="pvz-open" href="https://playgama.com/game/plants-vs-zombies-hybrids" target="_blank" rel="noopener noreferrer">OPEN GAME ↗</a>
+    </div>
   </div>
   <div class="pvz-frame">
-    <iframe src="https://plants-vs-zombies-hybrids.games.playgama.com/cmpe6ltov004an30htbub9kl7/index.html?platform_id=playgama" title="Plants vs. Zombies Hybrids" allow="fullscreen; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <iframe src="https://playgama.com/export/game/plants-vs-zombies-hybrids" title="Plants vs. Zombies Hybrids" allow="autoplay; fullscreen; gamepad; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
   </div>
+  <div class="pvz-fallback"><span>Embed not loading? Launch the game directly.</span><a class="pvz-open" href="https://playgama.com/game/plants-vs-zombies-hybrids" target="_blank" rel="noopener noreferrer">PLAY ON PLAYGAMA ↗</a></div>
 </section>
 <div class="toolbar"><label class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="Search games..." autocomplete="off" aria-label="Search games"></label><div class="filters" id="filters"><button class="filter active" data-filter="All">All games</button><button class="filter" data-filter="Arcade">Arcade</button><button class="filter" data-filter="Puzzle">Puzzle</button><button class="filter" data-filter="Skill">Skill</button><button class="filter" data-filter="Classic">Classic</button></div></div>
 <div class="sectionhead"><div><h2>Choose your game</h2><p>Little games, big leaderboard energy.</p></div><span class="count" id="count">12 GAMES</span></div>
